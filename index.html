@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Love</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <div class="landing-page">
+    <div class="bg-reels">
+      <div class="reel"><img src="reel1.jpg" alt="Reel 1"></div>
+      <div class="reel"><img src="reel2.jpg" alt="Reel 2"></div>
+      <div class="reel"><img src="reel3.jpg" alt="Reel 3"></div>
+      <div class="reel"><img src="reel4.jpg" alt="Reel 4"></div>
+    </div>
+
+    <div class="envelope" onclick="openLetter()">
+      <div class="letter-box">
+        <div class="flap"></div>
+        <div class="letter" id="letter">
+          <p>Hey love,<br><br>Happy Birthday! 🌻<br>
+        It's the first birthday together and we completed 9 months of togetherness. It's been an amazing journey with the rollercoaster ride of emotions! 
+          You are an amazing person in and out. Never experienced efforts, care, love until you came into my life. And it's true, the RIGHT WOMAN makes 
+          everything right and good. Idk I don't have much words to express the amount of love, care, respect I have for you ... 
+          Only can sum up with I LOVE YOU 💛</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Playlist -->
+  <section class="playlist">
+    <h2>Your Personal Spotify 🎶</h2>
+    <div class="videos">
+      <!-- Add your 20 videos here -->
+      <video controls src="song1.mp4"></video>
+      <video controls src="song2.mp4"></video>
+      <video controls src="song3.mp4"></video>
+      <video controls src="song4.mp4"></video>
+      <video controls src="song5.mp4"></video>
+      <!-- ... up to song20.mp4 -->
+    </div>
+  </section>
+
+  <!-- Photo Booth -->
+  <section class="photo-booth">
+    <h2>Photo Booth 🌌</h2>
+    <div class="instructions" id="instructions">
+      <p>📸 Click "Start Strip" to take 3 photos in sequence.  
+      Wait for the flash each time! 🌟</p>
+      <button class="close-btn small" onclick="closeInstructions()">×</button>
+    </div>
+    <div class="booth">
+      <video id="camera" autoplay></video>
+      <button onclick="startPhotoStrip()">📸 Start Strip</button>
+      <canvas id="stripCanvas"></canvas>
+      <a id="download" download="strip.png">Save Strip</a>
+    </div>
+  </section>
+
+</body>
+</html>
