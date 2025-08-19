@@ -110,8 +110,8 @@ body {
 
 .videos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 260px));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  gap: 110px;
 }
 
 .videos video {
